@@ -61,10 +61,13 @@ body{
   overflow-x:hidden;
 }
 
+.open-slide {
+  padding-top: 20px;
+}
 .globalnavbar{
   background-color:#121212;
   overflow:hidden;
-  height:63px;
+  height:60px;
 }
 
 .globalnavbar a{
@@ -72,13 +75,13 @@ body{
   display:block;
   color:#f2f2f2;
   text-align:center;
-  padding:14px 16px;
+  padding:22px 16px;
   text-decoration:none;
   font-size:17px;
 }
 
 .globalnavbar ul{
-  margin:8px 0 0 0;
+  margin:2px 0 0 0;
   list-style:none;
 }
 
@@ -93,13 +96,21 @@ body{
   background-color:#111;
   opacity:0.9;
   overflow-x:hidden;
-  padding-top:60px;
+  padding-top:0px;
   transition:0.5s;
 }
-
+.side-navmenu .btn-closemenu a{
+  top:0;
+  right:22px;
+  font-family: 'proxima_nova_altlight'
+  font-weight:lighter;
+  font-size:10px;
+  margin-left:0;
+}
 .side-navmenu a{
-  padding:10px 10px 10px 30px;
+  padding:10px 10px 10px 20px;
   text-decoration:none;
+  font-family: 'proxima_nova_rgbold';
   font-size:16px;
   color:#ccc;
   display:block;
@@ -107,16 +118,10 @@ body{
 }
 
 .side-navmenu a:hover{
-  color:#fff;
+  color:#f32655;
 }
 
-.side-navmenu .btn-closemenu{
-  position:absolute;
-  top:0;
-  right:22px;
-  font-size:36px;
-  margin-left:50px;
-}
+
 
 h1 {
   color: #fff;
