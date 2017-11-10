@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Filmmate</title>
   <link rel="stylesheet" href="css/css_index.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-      crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
 <body onscroll="scrolling()">
@@ -29,30 +27,44 @@
     <ul class="globalnavbar">
       <li><a href="#">Logo</a></li>
 
-</ul>
-    <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes.."  >
-<ul id="user-info"class="userInfo">
-  <li><button  <i class="material-icons">notifications</i> </button></li>
-</ul>
+    </ul>
+    <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes..">
+    <ul id="user-info" class="userInfo">
+      <li><button <i class="material-icons">notifications</i> </button></li>
+    </ul>
   </nav>
 
+  <nav>
 
-  <div id="side-menu" class="side-navmenu">
-    <nav>
-       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
-<ul class="categories">
+    <div id="side-menu" class="side-navmenu">
+      <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
+      <ul class="categories">
 
-<li > <div class="inicio"> <a href="#" class="inicioTab" >INICIO</a></div></li><br>
-<li>   <a href="#">EXPLORAR</a></li><br>
-<li>   <div  class="cartelera">
-<a  href="#" onclick="dropupCartelera()">MI CARTELERA <i class="material-icons">arrow_drop_down</i></a>
-    <div id="cartelera-list" class="playlists">
-      <ul>
-      <a href="#">Para ver con Ella</a>
-      </ul>
-    </div>
-  </div></li><br>
-<li>   <span class="grupos">
+        <li class="active">
+          <div class="inicio"> <a href="#" class="inicioTab">
+            <span class="block m-t-xs" >
+              INICIO
+            </span>
+          </a></div>
+        </li><br>
+        <li> <a href="#">EXPLORAR</a></li><br>
+        <li>
+          <div class="cartelera">
+            <a href="#" onclick="dropupCartelera()">
+              <span class="nav-label">MI CARTELERA</span>
+                 <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <span class="playlists">
+              <ul id="cartelera-list" class="nav nav-second-level collapse in">
+                <li><a href="#">Para ver con Ella</a></li>
+              </ul>
+            </span>
+
+          </div>
+        </li>
+
+        <li>
+          <span class="grupos">
     <a   href="#" >MIS GRUPOS <i class="material-icons" style="padding-top:30px">arrow_drop_down</i> </a>
     <div class="listaGrupos">
       <ul>
@@ -62,71 +74,65 @@
     </div>
   </span>
 
-</li><br>
-<li>   <a href="#">CONFITERÍA</a></li></li>
-</div>
-</ul>
-</nav>
+        </li><br>
+        <li> <a href="#">CONFITERÍA</a></li>
+        </li>
+    </div>
+    </ul>
+  </nav>
   <div class="home">
-    <div  id="Homecontent" class="container-fluid">
-      <div class="lastMovie">
-        <div  id="genres" class="genres" >
-          <button type="button" class="btn btn-outline-primary">General</button>
-          <button type="button" class="btn btn-outline-primary">Drama</button>
-          <button type="button" class="btn btn-outline-primary">Ciencia Ficción</button>
-          <button type="button" class="btn btn-outline-primary">Comedia</button>
-          <button type="button" class="btn btn-outline-primary">Comedia Romántica</button>
-              <button type="button" class="btn btn-outline-primary">Acción</button>
-              <button type="button" class="btn btn-outline-primary">Documentales</button>
-              <button type="button" class="btn btn-outline-primary">Animación</button>
-       </div>
-        <img class="prinmovie"src="resources/inicio/prinMovie.png" alt="" width="100%">
-   </div>
+    <div id="Homecontent" class="container-fluid">
+      <div id="lastMovie"class="lastMovie">
+    <img class="img-responsive" src="resources/inicio/prinMovie.png" alt="" width="100%">
+</div>
+    <div id="genres" class="genres">
+      <button type="button" class="btn btn-outline-primary">General</button>
+      <button type="button" class="btn btn-outline-primary">Drama</button>
+      <button type="button" class="btn btn-outline-primary">Ciencia Ficción</button>
+      <button type="button" class="btn btn-outline-primary">Comedia</button>
+      <button type="button" class="btn btn-outline-primary">Comedia Romántica</button>
+      <button type="button" class="btn btn-outline-primary">Acción</button>
+      <button type="button" class="btn btn-outline-primary">Documentales</button>
+      <button type="button" class="btn btn-outline-primary">Animación</button>
+    </div>
 
-      <h1>Esto es una prueba responsive del menu lateral</h1>
     </div>
   </div>
 
-<div id="activityBar" class="activitySideBar">
+  <div id="activityBar" class="activitySideBar">
 
-</div>
+  </div>
   <script>
-  var navbar = document.getElementById("globalnavbar");
-var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("globalnavbar");
+    var sticky = navbar.offsetTop;
 
-function scrolling() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    document.getElementById('genres').style.marginTop = '65px';
-  } else {
-  navbar.classList.remove("sticky");
-  }
-}
-    function openSlideMenu(){
+    function scrolling() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        document.getElementById('lastMovie').style.marginTop = '65px';
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    function openSlideMenu() {
       document.getElementById('side-menu').style.width = '210px';
       document.getElementById('Homecontent').style.marginLeft = '210px';
     }
 
-    function closeSlideMenu(){
+    function closeSlideMenu() {
       document.getElementById('side-menu').style.width = '0';
       document.getElementById('Homecontent').style.marginLeft = '0';
     }
 
-    function dropupCartelera(){
+    function dropupCartelera() {
       document.getElementById('cartelera-list').style.height = '0';
     }
-
-
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
+
 </html>
