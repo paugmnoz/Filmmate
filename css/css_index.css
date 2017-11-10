@@ -94,8 +94,16 @@ footer, header, hgroup, menu, nav, section {
 body{
   font-family: 'proxima_nova_rgregular', sans-serif;
   font-weight: 100;
+  padding: 0;
+  margin: 0;
   background-color:#181818;
   overflow-x:hidden;
+}
+
+.home {
+
+  padding: 0 -15px 0 -15px;
+  margin: 0 -15px 0 -15px;
 }
 
 .container {
@@ -108,7 +116,7 @@ width:100%;
 }
 .container-fluid {
   background-color:#181818;
-padding: 0;
+  padding: 0;
 transition:margin-left 0.5s;
 overflow:hidden;
 width:100%;
@@ -121,7 +129,7 @@ width:100%;
   width: 100%
 }
 
-.sticky + .container-fluid {
+.sticky + .home {
   padding-top: 60px;
 }
 
@@ -131,12 +139,10 @@ width:100%;
 
 .genres {
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
 .genres button  {
-
 height: 37px;
 width: 165px;
   margin-left: 20px;
@@ -192,6 +198,7 @@ font-family: 'proxima_nova_rgbold'
 .userInfo ul {
   display: flex;
   flex-direction: row;
+    list-style:none;
 }
 .userInfo button{
   margin-right: 1em;
@@ -260,7 +267,6 @@ width: 100%;
   z-index:0;
   top:0;
   left:0;
-
   background-color:#121212;
   overflow-x:hidden;
   padding-top:0px;
@@ -268,12 +274,6 @@ width: 100%;
 
 }
 
-.side-navmenu .indexSection {
-  background: #181818;
-}
-.side-navmenu .indexSection a{
-  color:#f32655;
-}
 
 .side-navmenu .btn-closemenu a{
   top:0;
@@ -282,6 +282,8 @@ width: 100%;
   font-weight:lighter;
   font-size:10px;
   margin-left:0;
+  margin-bottom: 60px;
+
 }
 .side-navmenu a{
   padding:10px 5px 5px 20px;
@@ -289,15 +291,42 @@ width: 100%;
   font-family: 'proxima_nova_rgbold';
   font-size:16px;
   color:#a0a0a0;
-  display:block;
   transition:0.3s;
 }
 
+.side-navmenu .btn-closemenu {
+  font-family: 'proxima_nova_altlight';
+  font-size:16px;
+  margin-bottom: 60px;
+}
 .side-navmenu a:hover{
   color:#f32655;
   text-decoration: none;
 }
+.side-navmenu .inicio {
+  height: 40px;
+  background: #181818;
+  color:#f32655 !important;
 
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+
+}
+
+.side-navmenu .inicioTab {
+  background: #181818;
+  font-family: 'proxima_nova_rgbold';
+  color:#f32655 !important;
+}
+
+.categories ul {
+  width: 210px;
+  list-style:none;
+}
 .playlists a {
   padding:10px 10px 10px 20px;
   text-decoration:none;
@@ -307,11 +336,6 @@ width: 100%;
   display:block;
   transition:0.3s;
 }
-
-.misGrupos a {
-align-content:space-between;
-}
-
 
 .listaGrupos a {
   text-decoration:none;
@@ -329,7 +353,6 @@ h1 {
 }
 #Homecontent{
   margin-left:210px;
-
   transition:margin-left 0.5s;
   overflow:hidden;
   width:100%;
