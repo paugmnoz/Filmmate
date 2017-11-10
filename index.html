@@ -2,16 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Filmmate</title>
   <link rel="stylesheet" href="css/css_index.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
 </head>
 
-<body>
-  <nav class="globalnavbar">
+<body onscroll="scrolling()">
+  <nav id="globalnavbar" class="globalnavbar">
     <span class="open-slide">
       <a href="#" onclick="openSlideMenu()">
         <svg width="30" height="30">
@@ -20,15 +23,21 @@
                 <path d="M2,19 25,19" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
             </svg>
       </a>
+
     </span>
+
     <ul class="globalnavbar">
-      <li><a href="#">Notificaciones</a></li>
-      <li><a href="#">Perfil</a></li>
-    </ul>
+      <li><a href="#">Logo</a></li>
+
+</ul>
+    <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes.."  >
+<ul id="user-info"class="userInfo">
+  <li><button  <i class="material-icons">notifications</i> </button></li>
+</ul>
   </nav>
   <div id="side-menu" class="side-navmenu">
       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> < ocultar panel</a>
-      <a href="#">INICIO</a>
+      <a href="#" class="indexSection">INICIO</a>
       <a href="#">EXPLORAR</a>
       <div  class="cartelera">
         <a  href="#" onclick="dropupCartelera()">MI CARTELERA <i class="material-icons">arrow_drop_down</i></a>
@@ -39,9 +48,7 @@
         </div>
       </div>
       <span class="grupos">
-        <ul class="misGrupos">
-          <li><a>MIS GRUPOS <i class="material-icons">arrow_drop_down</i> </a></li>
-        </ul>
+        <a href="#" >MIS GRUPOS <i class="material-icons">arrow_drop_down</i> </a>
         <div class="listaGrupos">
           <ul>
             <a href="#">Familia</a>
@@ -49,25 +56,33 @@
           </ul>
         </div>
       </span>
-      <a>CONFITERÍA</a>
+      <a href="#">CONFITERÍA</a>
   </div>
-  <div  id="Homecontent" class="inicio">
+  <div  id="Homecontent" class="container-fluid">
     <section class="lastMovie">
-      <img src="resources/inicio/prinMovie.png" alt="" width="100%">
-      <ul>
-        <ul>
-
-        </ul>
-      </ul>
+      <div class="genres" >
+        <button type="button" class="btn btn-outline-primary">General</button>
+        <button type="button" class="btn btn-outline-primary">Drama</button>
+        <button type="button" class="btn btn-outline-primary">Ciencia Ficción</button>
+        <button type="button" class="btn btn-outline-primary">Comedia</button>
+     </div>
+      <img class="prinmovie"src="resources/inicio/prinMovie.png" alt="" width="100%">
  </section>
- <div class="genres">
-
- </div>
 
     <h1>Esto es una prueba responsive del menu lateral</h1>
   </div>
 
   <script>
+  var navbar = document.getElementById("globalnavbar");
+var sticky = navbar.offsetTop;
+
+function scrolling() {
+  if (window.pageYOffset >= sticky) {
+    globalnavbar.classList.add("sticky")
+  } else {
+    globalnavbar.classList.remove("sticky");
+  }
+}
     function openSlideMenu(){
       document.getElementById('side-menu').style.width = '210px';
       document.getElementById('Homecontent').style.marginLeft = '210px';
@@ -81,6 +96,18 @@
     function dropupCartelera(){
       document.getElementById('cartelera-list').style.height = '0';
     }
+
+
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+crossorigin="anonymous"></script>
 </body>
 </html>
