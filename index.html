@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Filmmate</title>
   <link rel="stylesheet" href="css/css_index.css">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
-
   <nav class="globalnavbar">
     <span class="open-slide">
       <a href="#" onclick="openSlideMenu()">
@@ -22,7 +22,6 @@
       </a>
     </span>
     <ul class="globalnavbar">
-      <li><a href="#">Home</a></li>
       <li><a href="#">Notificaciones</a></li>
       <li><a href="#">Perfil</a></li>
     </ul>
@@ -31,22 +30,56 @@
       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> < ocultar panel</a>
       <a href="#">INICIO</a>
       <a href="#">EXPLORAR</a>
-      <a href="#">MI CARTELERA</a>
-      <a href="#">MIS GRUPOS</a>
-      <a href="#">CONFITERÍA</a>
+      <div  class="cartelera">
+        <a  href="#" onclick="dropupCartelera()">MI CARTELERA <i class="material-icons">arrow_drop_down</i></a>
+        <div id="cartelera-list" class="playlists">
+          <ul>
+          <a href="#">Para ver con Ella</a>
+          </ul>
+        </div>
+      </div>
+      <span class="grupos">
+        <ul class="misGrupos">
+          <li><a>MIS GRUPOS <i class="material-icons">arrow_drop_down</i> </a></li>
+        </ul>
+        <div class="listaGrupos">
+          <ul>
+            <a href="#">Familia</a>
+            <a href="#">Proféticos</a>
+          </ul>
+        </div>
+      </span>
+      <a>CONFITERÍA</a>
   </div>
-  <div  id="main">
+  <div  id="Homecontent" class="inicio">
+    <section class="lastMovie">
+      <img src="resources/inicio/prinMovie.png" alt="" width="100%">
+      <ul>
+        <ul>
+
+        </ul>
+      </ul>
+ </section>
+ <div class="genres">
+
+ </div>
+
     <h1>Esto es una prueba responsive del menu lateral</h1>
   </div>
+
   <script>
     function openSlideMenu(){
       document.getElementById('side-menu').style.width = '210px';
-      document.getElementById('main').style.marginLeft = '210px';
+      document.getElementById('Homecontent').style.marginLeft = '210px';
     }
 
     function closeSlideMenu(){
       document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
+      document.getElementById('Homecontent').style.marginLeft = '0';
+    }
+
+    function dropupCartelera(){
+      document.getElementById('cartelera-list').style.height = '0';
     }
   </script>
 </body>
