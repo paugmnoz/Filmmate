@@ -109,7 +109,6 @@ width:100%;
 .container-fluid {
   background-color:#181818;
 padding: 0;
-margin-left: 0px;
 transition:margin-left 0.5s;
 overflow:hidden;
 width:100%;
@@ -122,7 +121,7 @@ width:100%;
   width: 100%
 }
 
-.sticky + .container {
+.sticky + .container-fluid {
   padding-top: 60px;
 }
 
@@ -132,11 +131,14 @@ width:100%;
 
 .genres {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .genres button  {
+
 height: 37px;
-width: 150px;
+width: 165px;
   margin-left: 20px;
   background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12); /* For Safari 5.1 to 6.0 */
  background: -o-linear-gradient(90deg, #ee0979, #fc5c12);/* For Opera 11.1 to 12.0 */
@@ -235,9 +237,24 @@ width: 100%;
   color: #e1dede;
 
 }
-.side-navmenu{
+
+.activitySideBar {
   height:100%;
   width:0;
+  margin-top: 60px;
+  position:fixed;
+  z-index:0;
+  top:0;
+  left:0;
+
+  background-color:#121212;
+  overflow-x:hidden;
+  padding-top:0px;
+  transition:0.5s;
+}
+.side-navmenu{
+  height:100%;
+  width:210px;
   margin-top: 60px;
   position:fixed;
   z-index:0;
@@ -311,6 +328,8 @@ h1 {
   color: #fff;
 }
 #Homecontent{
+  margin-left:210px;
+
   transition:margin-left 0.5s;
   overflow:hidden;
   width:100%;

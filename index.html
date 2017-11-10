@@ -65,22 +65,28 @@
         <button type="button" class="btn btn-outline-primary">Drama</button>
         <button type="button" class="btn btn-outline-primary">Ciencia Ficción</button>
         <button type="button" class="btn btn-outline-primary">Comedia</button>
+        <button type="button" class="btn btn-outline-primary">Comedia Romántica</button>
+            <button type="button" class="btn btn-outline-primary">Acción</button>
+            <button type="button" class="btn btn-outline-primary">Documentales</button>
+            <button type="button" class="btn btn-outline-primary">Animación</button>
      </div>
       <img class="prinmovie"src="resources/inicio/prinMovie.png" alt="" width="100%">
  </section>
 
     <h1>Esto es una prueba responsive del menu lateral</h1>
   </div>
+<div id="activityBar" class="activitySideBar">
 
+</div>
   <script>
   var navbar = document.getElementById("globalnavbar");
 var sticky = navbar.offsetTop;
 
 function scrolling() {
   if (window.pageYOffset >= sticky) {
-    globalnavbar.classList.add("sticky")
+    navbar.classList.add("sticky")
   } else {
-    globalnavbar.classList.remove("sticky");
+  navbar.classList.remove("sticky");
   }
 }
     function openSlideMenu(){
