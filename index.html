@@ -8,37 +8,39 @@
   <title>Filmmate</title>
   <link rel="stylesheet" href="css/css_index.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
-<body onscroll="scrolling()">
+<header>
   <nav id="globalnavbar" class="globalnavbar">
     <span class="open-slide">
       <a href="#" onclick="openSlideMenu()">
         <svg width="30" height="30">
-                <path d="M2,5 25,5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-                <path d="M2,12 25,12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-                <path d="M2,19 25,19" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+            <path d="M2,5 25,5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2,12 25,12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2,19 25,19" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
       </a>
-
     </span>
 
-    <ul class="globalnavbar">
-      <li><a href="#">Logo</a></li>
+    <a href="#">Logo</a>
 
-    </ul>
+
     <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes..">
-  <span  >
-<i class="material-icons">search</i> ::before
-  </span></input>
-    <ul id="user-info" class="userInfo">
-      <li><button <i class="material-icons">notifications</i> </button></li>
-    </ul>
+    </input>
+
+    <div class="secondaryNav">
+      <ul id="user-info" class="userInfo">
+        <li><button <i class="material-icons">notifications</i> </button></li>
+      </ul>
+    </div>
+
   </nav>
+</header>
+
+<body onscroll="scrolling()">
+
 
   <nav>
-
     <div id="side-menu" class="side-navmenu">
       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
       <ul class="categories">
@@ -62,49 +64,112 @@
                 <li><a href="#">Para ver con Ella</a></li>
               </ul>
             </span>
-
           </div>
         </li>
-
         <li>
-          <span class="grupos">
-    <a   href="#" >MIS GRUPOS <i class="material-icons" style="padding-top:30px">arrow_drop_down</i> </a>
-    <div class="listaGrupos">
-      <ul>
-        <a href="#">Familia</a>
-        <a href="#">Proféticos</a>
-      </ul>
-    </div>
-  </span>
+          <div class="grupos">
+            <a href="#">
+      <span  class="nav-label">MIS GRUPOS</span>
+      <i class="material-icons">arrow_drop_down</i> </a>
+            <div class="listaGrupos">
+              <ul>
+                <a href="#">Familia</a>
+                <a href="#">Proféticos</a>
+              </ul>
+            </div>
+            </span>
 
         </li><br>
         <li> <a href="#">CONFITERÍA</a></li>
         </li>
-    </div>
-    </ul>
+        </div>
+      </ul>
   </nav>
-  <div class="home">
-    <div id="Homecontent" class="container-fluid">
-      <div id="lastMovie"class="lastMovie">
-    <img class="img-responsive" src="resources/inicio/prinMovie.png" alt="" width="100%">
-</div>
-    <div id="genres" class="genres">
-      <button type="button" class="btn btn-outline-primary">General</button>
-      <button type="button" class="btn btn-outline-primary">Drama</button>
-      <button type="button" class="btn btn-outline-primary">Ciencia Ficción</button>
-      <button type="button" class="btn btn-outline-primary">Comedia</button>
-      <button type="button" class="btn btn-outline-primary">Comedia Romántica</button>
-      <button type="button" class="btn btn-outline-primary">Acción</button>
-      <button type="button" class="btn btn-outline-primary">Documentales</button>
-      <button type="button" class="btn btn-outline-primary">Animación</button>
-    </div>
+
+  <div id="Homecontent" class="home">
+    <div class="container-fluid">
+      <div id="lastMovie" class="lastMovie">
+        <img src="resources/inicio/prinMovie.png" alt="" width="100%">
+      </div>
+      <div id="genres" class="genres" onclick="genresBtn()">
+        <button class="selected">General</button>
+        <button>Drama</button>
+        <button>Ciencia Ficción</button>
+        <button>Comedia</button>
+        <button>Comedia Romántica</button>
+        <button>Acción</button>
+        <button>Documentales</button>
+        <button>Animación</button>
+      </div>
+      <div class="lastMovieContent">
+          <a href="#"><i class="material-icons md-160">play_circle_outline</i></a>
+          <div class="movieInfo">
+            <h3>CONTINUAR VIENDO</h3>
+            <h1 class="movieTitle">STRANGER THINGS: SEASON 2</h1>
+            <h2>T2: Episodio 5</h2>
+            <p>Nancy y Jonathan se acercan a un nuevo aliado que tiene su propia teoría sobre los eventos. Once indaga en su pasado, y Bob es clave en un momento crítico.</p>
+            <ul class="movieBtns">
+              <li><i class="material-icons">add_circle</i></li>
+              <li><button class="selected">¡Crear plan!</button></li>
+            </ul>
+          </div>
+      </div>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
 
     </div>
   </div>
-
-  <div id="activityBar" class="activitySideBar">
-
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     var navbar = document.getElementById("globalnavbar");
     var sticky = navbar.offsetTop;
@@ -131,11 +196,15 @@
     function dropupCartelera() {
       document.getElementById('cartelera-list').style.height = '0';
     }
+
+    function genresBtn() {
+      $('button').on('click', function() {
+        $('button').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    }
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>

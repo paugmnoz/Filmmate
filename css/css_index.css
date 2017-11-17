@@ -84,6 +84,10 @@ body {
 .home {
   padding: 0 -15px 0 -15px;
   margin: 0 -15px 0 -15px;
+  background-color: #181818;
+  transition: margin-left 0.5s;
+  overflow: hidden;
+  width: 100%;
 }
 
 .container {
@@ -112,8 +116,6 @@ body {
 .sticky+.home {
   padding-top: 60px;
 }
-
-
 
 .options {
   margin-left: 20px;
@@ -173,6 +175,7 @@ body {
 
 input[type=text] {
   width: 75%;
+  color: #fff;
   margin-left: 60px;
   background-color: #121212;
   -moz-border-color: transparent;
@@ -261,13 +264,13 @@ input[type=text]:focus {
   height: 40px;
   background: #181818;
   color: #f32655 !important;
-    border-right: 4px solid ;
-    border-color: -webkit-linear-gradient(0deg, #ee0979, #fc5c12);
-    /* For Safari 5.1 to 6.0 */
-     border-color: -o-linear-gradient(0deg, #ee0979, #fc5c12);
-    /* For Opera 11.1 to 12.0 */
-    border-color: -moz-linear-gradient(0deg, #ee0979, #fc5c12);
-    border-color: linear-gradient(0deg, #ee0979, #fc5c12);
+  border-right: 4px solid;
+  border-color: -webkit-linear-gradient(0deg, #ee0979, #fc5c12);
+  /* For Safari 5.1 to 6.0 */
+  border-color: -o-linear-gradient(0deg, #ee0979, #fc5c12);
+  /* For Opera 11.1 to 12.0 */
+  border-color: -moz-linear-gradient(0deg, #ee0979, #fc5c12);
+  border-color: linear-gradient(0deg, #ee0979, #fc5c12);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -310,44 +313,32 @@ input[type=text]:focus {
 .genres {
   margin-top: -670px;
   z-index: 100;
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
 .genres button {
   height: 37px;
   width: 165px;
   margin-left: 20px;
-    background-color: transparent;
+  background-color: transparent;
+  -moz-border-color: #ee0979;
+  -webkit-border-color: #ee0979;
+  border-color: #ee0979;
+  border-width: 1px;
+  border-style: solid;
   color: #fff;
   font-family: 'proxima_nova_rgbold' -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   align-content: center;
   flex: 0 1 auto;
-  padding-bottom: 5px;
-  -moz-border-color: #f32655;
-  -webkit-border-color: #f32655;
-  border-color: #f32655;
-  border-width: 1px;
 }
 
-
-.active button {
-    background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
-  /* For Safari 5.1 to 6.0 */
-     background: -o-linear-gradient(90deg, #ee0979, #fc5c12);
-  /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #ee0979, #fc5c12);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(90deg, #ee0979, #fc5c12);
-  -moz-border-color: transparent;
-  -webkit-border-color: transparent;
-  border-color: transparent;
-}
 .genres button:hover {
   background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
   /* For Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(90deg, #ee0979, #fc5c12);
+  background: -o-linear-gradient(90deg, #ee0979, #fc5c12);
   /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(90deg, #ee0979, #fc5c12);
   /* For Firefox 3.6 to 15 */
@@ -355,18 +346,118 @@ input[type=text]:focus {
   -moz-border-color: transparent;
   -webkit-border-color: transparent;
   border-color: transparent;
-}
-.lastMovie {
-
-  margin-left: 0px;
+  transition: 0.3s;
 }
 
-.recent-movies{
+.genres button.selected {
+  background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(90deg, #ee0979, #fc5c12);
+  -moz-border-color: transparent;
+  -webkit-border-color: transparent;
+  border-color: transparent;
+  transition: 0.3s;
+}
 
+.lastMovieContent {
+  margin-top: 120px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: middle;
+}
+
+.lastMovieContent a {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  padding: 20px;
+  color: #fff;
+  font-size: 150;
+}
+
+.material-icons.md-160 {
+  font-size: 160px;
+}
+
+.lastMovieContent .movieInfo {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin-left: 60px;
+
+}
+
+.movieBtns {
+  margin-top: 60px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: middle;
+}
+
+.movieBtns li {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.movieBtns button {
+  height: 37px;
+  width: 165px;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'proxima_nova_rgbold';
+   -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  align-content: center;
+  flex: 0 1 auto;
+  background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, #ee0979, #fc5c12);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(90deg, #ee0979, #fc5c12);
+  -moz-border-color: transparent;
+  -webkit-border-color: transparent;
+  border-color: transparent;
+  transition: 0.3s;
+}
+
+
+h1, p, h2 {
+  color: #fff;
+}
+
+h3 {
+  font-family: 'proxima_nova_rgbold';
+  color: #a0a0a0;
 }
 
 h1 {
-  color: #fff;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 20px;
+}
+
+p {
+  width: 45%;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 18;
 }
 
 #Homecontent {
