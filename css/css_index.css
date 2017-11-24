@@ -253,7 +253,7 @@ input[type=text]:focus {
 
   margin-top: 60px;
   position: fixed;
-  z-index: 0;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: #121212;
@@ -386,7 +386,8 @@ input[type=text]:focus {
 
 .lastMovie{
 width: 100%;
-height: 700px}
+height: 600px;
+display: flex;}
 .genres button:hover {
   background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
   /* For Safari 5.1 to 6.0 */
@@ -426,14 +427,12 @@ height: 700px}
   justify-content: center;
   align-content: space-between;
   align-items: center;
-
 }
 
 .lastMovieContent a {
   order: 0;
   flex: 0 1 auto;
   align-self: center;
-
   padding: 20px;
   color: #fff;
   font-size: 150;
@@ -443,6 +442,9 @@ height: 700px}
   font-size: 160px;
 }
 
+.material-icons.md-100 {
+  font-size: 100px;
+}
 .material-icons.md-30 {
   font-size: 30px;
 }
@@ -451,12 +453,11 @@ height: 700px}
 .lastMovieContent .movieInfo {
   order: 0;
   flex: 0 1 auto;
-  align-self: center;
+  align-self: auto;
   margin-left: 60px;
 }
 
 .movieBtns {
-  width: 100%;
   margin-top:50px;
   list-style: none;
   display: flex;
@@ -480,7 +481,7 @@ height: 700px}
   height: 37px;
   width: 165px;
   color: #fff;
-margin-left: 150%;
+
 font-size: 17px;
   font-family: 'proxima_nova_rgbold';
    -moz-border-radius: 40px;
@@ -516,25 +517,32 @@ h1 {
   font-size: 40px;
 }
 
+.lastMovieContent h1 {
+  width:80%;
+
+}
+
 h2 {
   font-family: 'proxima_nova_rgbold';
   font-size: 20px;
 }
 
 p {
-  width: 45%;
+  width:80%;
   font-family: 'proxima_nova_rgregular';
   font-size: 18;
 }
 
 .recentMovies {
-  margin-top: 200px;
+  position: flex;
+  flex-direction: column;
   width: 100%;
   padding: 20px;
+  margin-top: 200px;
   margin-left: 15px;
 
 }
-img {
+.lastMovie img {
   display: block;
   width: 100%;
   height: auto;
@@ -558,8 +566,8 @@ margin-top: 15px;
   flex-direction: row;
 }
 
-.more_movies {
-  margin-top: 40px;
+.more_movies, .directores {
+  margin-top: 20px;
   margin-left: 15px;
   width: 100%;
   padding: 20px;
@@ -576,12 +584,13 @@ margin-top: 15px;
 
 .more_m {
   width: 200px;
-  height: 250px;
+  height: 300px;
+  display: flex;
   background: #fff;
   margin-right: 16px;
   position: relative;
-
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -590,24 +599,59 @@ margin-top: 15px;
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
   transition: .5s ease;
   background-color: #000;
 }
 
 .more_m:hover .overlay {
-  opacity: 0.2;
+  opacity: 0.5;
+}
+
+.play {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: .5s ease;
+
+}
+
+.overlay .play:hover {
+  opacity: 100;
 }
 
 
-.more_m .dir img {
-  border-radius: 50%;
+.dir img {
+  border-radius: 100%;
+  border-width: 2px;
+  border-color: #f32655;
 }
 
+.director {
+  margin-top: 40px;
+  padding-left:35px;
+  width: 100%;
+  height: auto;
+background-image: url(resources/pelis/wesback.png);
+  padding: 20px;
+}
+
+.backg img {
+  margin-left: -30px;
+}
 .logo {
 margin-top: -20px;
   width: 120px;
   height: 65px;
+}
+
+.avatar {
+  width: 5%;
+  height: 5%;
 }
 
 #Homecontent {
