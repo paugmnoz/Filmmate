@@ -448,6 +448,11 @@ input[type=text]:focus {
   flex: 0 1 auto;
 }
 
+.movieInit {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
 .lastMovie {
   width: 100%;
   height: 500px;
@@ -820,4 +825,19 @@ p {
   align-items: center;
   width: 320px;
   padding-bottom: 10px;
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
 }

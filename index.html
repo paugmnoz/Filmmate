@@ -90,7 +90,8 @@
 
   <div id="Homecontent" class="home">
     <div class="container-fluid">
-      <div id="lastMovie" class="lastMovie">
+      <div class="movieInit" >
+      <div id="lastMovie" class="lastMovie" >
         <img src="resources/inicio/prinMovie.png" alt="" class="w3-image" style="width:100%; height:auto;">
       </div>
       <div id="genres" class="genres" onclick="genresBtn()">
@@ -104,7 +105,7 @@
         <button>Animación</button>
       </div>
       <div class="lastMovieContent">
-        <a href="#"><i class="material-icons md-160">play_circle_outline</i></a>
+        <a href="#"><i id="playbtn" class="material-icons md-160">play_circle_outline</i></a>
         <div class="movieInfo">
           <h3>CONTINUAR VIENDO</h3><br>
           <h1 class="movieTitle">STRANGER THINGS: SEASON 2  <a href="#"><i class="material-icons md-30">add_circle</i></a></h1>
@@ -115,6 +116,7 @@
           </ul>
         </div>
       </div>
+    </div>
       <div class="recentMovies">
         <h3>VISTO RECIENTEMENTE</h3>
         <div class="rm_movies">
@@ -214,82 +216,83 @@
 
       <div class="director">
         <img src="resources/pelis/wesback.png" alt="" class="w3-image backg" style="width:100%;">
-      </div>
-      <div class="directores">
-        <h3>DIRECTORES QUE PODRÍAN GUSTARTE</h3><br>
-        <div class="movies_more">
-          <ul>
-            <li>
-              <div class="more_m dir" style="width: 200px;height:200px;background:transparent"><img src="resources/directores/wes.png" alt="" width="100%"></div>
-            </li>
-            <li>
-              <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/padd.png" alt="" width="100%"></div>
-            </li>
-            <li>
-              <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/tim.png" alt="" width="100%"></div>
-            </li>
-            <li>
-              <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/tho.png" alt="" width="100%"></div>
-            </li>
-          </ul>
-        </div>
 
-        <h1 style="font-size:28px">WES ANDERSON</h1>
-        <p><b>Wesley Mortimer Wales Anderson</b>, director de cine, guionista, actor y productor de cine estadounidense. Conocido principalmente por haber dirigido las películas: El fantástico señor zorro, The Royal Tenenbaums, Viaje a Darjeeling, Hotel
-          Chevalier, Moonrise Kingdom y El Gran Hotel Budapest, entre otras.</p>
-        <div class="movies_more">
-          <ul>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/wes1.jpg" alt="" style="width:100%;height:auto">
-                <div class="overlay"><a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/wes2.jpg" alt="" width="100%">
-                <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/wes3.jpg" alt="" width="100%">
-                <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/wes4.jpg" alt="" width="100%">
-                <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/wes5.jpg" alt="" width="100%">
-                <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="more_m wes"><img src="resources/pelis/mooon.jpg" alt="" width="100%">
-                <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div class="directores">
+          <h3>DIRECTORES QUE PODRÍAN GUSTARTE</h3><br>
+          <div class="movies_more">
+            <ul>
+              <li>
+                <div class="more_m dir" style="width: 200px;height:200px;background:transparent"><img src="resources/directores/wes.png" alt="" width="100%"></div>
+              </li>
+              <li>
+                <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/padd.png" alt="" width="100%"></div>
+              </li>
+              <li>
+                <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/tim.png" alt="" width="100%"></div>
+              </li>
+              <li>
+                <div class="more_m dir" style="width: 120px;height:120px;background:transparent"><img src="resources/directores/tho.png" alt="" width="100%"></div>
+              </li>
+            </ul>
+          </div>
 
+          <h1 style="font-size:28px">WES ANDERSON</h1>
+          <p><b>Wesley Mortimer Wales Anderson</b>, director de cine, guionista, actor y productor de cine estadounidense. Conocido principalmente por haber dirigido las películas: El fantástico señor zorro, The Royal Tenenbaums, Viaje a Darjeeling, Hotel
+            Chevalier, Moonrise Kingdom y El Gran Hotel Budapest, entre otras.</p>
+          <div class="movies_more">
+            <ul>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/wes1.jpg" alt="" style="width:100%;height:auto">
+                  <div class="overlay"><a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/wes2.jpg" alt="" width="100%">
+                  <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/wes3.jpg" alt="" width="100%">
+                  <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/wes4.jpg" alt="" width="100%">
+                  <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/wes5.jpg" alt="" width="100%">
+                  <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="more_m wes"><img src="resources/pelis/mooon.jpg" alt="" width="100%">
+                  <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
 
     </div>
 
-    <div class = "footer">
+    <div class="footer">
       <div class="logoschild">
         <div class="logos">
-            <div class="log"><img src="./resources/tw.png" alt=""></div>
-            <div class="log"><img src="./resources/fb.png" alt=""></div>
-          </div>
+          <div class="log"><img src="./resources/tw.png" alt=""></div>
+          <div class="log"><img src="./resources/fb.png" alt=""></div>
         </div>
-        <p >2017 Filmmate</p>
+      </div>
+      <p>2017 Filmmate</p>
     </div>
   </div>
 
@@ -316,71 +319,71 @@
         </ul>
     </nav>
 
+    </div>
   </div>
-</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-      var navbar = document.getElementById("globalnavbar");
-      var sticky = navbar.offsetTop;
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    var navbar = document.getElementById("globalnavbar");
+    var sticky = navbar.offsetTop;
 
-      function scrolling() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-          document.getElementById('lastMovie').style.marginTop = '65px';
-        } else {
-          navbar.classList.remove("sticky");
-        }
+    function scrolling() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        document.getElementById('lastMovie').style.marginTop = '65px';
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+
+    function openSlideMenu() {
+
+      $('a').on('click', function() {
+        $('a').removeClass('opened');
+        $(this).addClass('opened');
+      });
+      document.getElementById('side-menu').style.width = '13%';
+      if (document.getElementById('side-menu').getElementsByClassName('opened')) {
+        document.getElementById('Homecontent').style.marginLeft = '13%';
+        document.getElementById('Homecontent').style.width = '86%';
+      } else {}
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('Homecontent').style.marginLeft = '0';
+      if (document.getElementById('activitySideBar').width == '13%') {
+        document.getElementById('Homecontent').style.width = '73%';
+      } else {
+        document.getElementById('Homecontent').style.width = '100%';
       }
 
+    }
 
-      function openSlideMenu() {
-
-        $('a').on('click', function() {
-          $('a').removeClass('opened');
-          $(this).addClass('opened');
-        });
-        document.getElementById('side-menu').style.width = '13%';
-        if (document.getElementById('side-menu').getElementsByClassName('opened')) {
-          document.getElementById('Homecontent').style.marginLeft = '13%';
-          document.getElementById('Homecontent').style.width = '86%';
-        } else {}
+    function closeSlideAct() {
+      document.getElementById('activitySideBar').style.width = '4%';
+      document.getElementById('activitySideBar').style.marginLeft = '10%';
+      document.getElementById('Homecontent').style.marginRight = '10%';
+      if (document.getElementById('activitySideBar').width == '13%') {
+        document.getElementById('Homecontent').style.width = '73%';
+      } else {
+        document.getElementById('Homecontent').style.width = '90%';
       }
 
-      function closeSlideMenu() {
-        document.getElementById('side-menu').style.width = '0';
-        document.getElementById('Homecontent').style.marginLeft = '0';
-        if (document.getElementById('activitySideBar').width == '13%') {
-          document.getElementById('Homecontent').style.width = '73%';
-        } else {
-          document.getElementById('Homecontent').style.width = '100%';
-        }
+    }
 
-      }
+    function dropupCartelera() {
+      document.getElementById('cartelera-list').style.height = '0';
+      document.getElementById('cartelera-list').style.opacity = '0';
+    }
 
-      function closeSlideAct() {
-        document.getElementById('activitySideBar').style.width = '4%';
-        document.getElementById('activitySideBar').style.marginLeft = '10%';
-        document.getElementById('Homecontent').style.marginRight = '10%';
-        if (document.getElementById('activitySideBar').width == '13%') {
-          document.getElementById('Homecontent').style.width = '73%';
-        } else {
-          document.getElementById('Homecontent').style.width = '90%';
-        }
-
-      }
-
-      function dropupCartelera() {
-        document.getElementById('cartelera-list').style.height = '0';
-        document.getElementById('cartelera-list').style.opacity = '0';
-      }
-
-      function genresBtn() {
-        $('button').on('click', function() {
-          $('button').removeClass('selected');
-          $(this).addClass('selected');
-        });
-      }
-    </script>
+    function genresBtn() {
+      $('button').on('click', function() {
+        $('button').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    }
+  </script>
 
 </body>
 
