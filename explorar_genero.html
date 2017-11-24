@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Filmmate</title>
+        <link rel="stylesheet" href="css/css_explorar_genero.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+    </head>
+
+    <header>
+      <nav id="globalnavbar" class="globalnavbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M2,5 25,5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2,12 25,12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2,19 25,19" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </span>
+
+        <a href="#" class="logo"><img src="resources/FilmmateLogo.png" class="w3-image" alt=""  height="100%"></a>
+        <a href=""> <i class="material-icons">search</i>  </a>
+
+        <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes..">
+        </input>
+
+        <div class="secondaryNav">
+          <ul id="user-info" class="userInfo">
+            <li><button <i class="material-icons">notifications</i> </button></li>
+          </ul>
+
+          <ul class="avatar">
+            <li><img src="resources/inicio/av2.png" class="avatar" alt=""></li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <body onscroll="scrolling()">
+      <nav class="side-navmenu">
+        <div id="side-menu" class="side-navmenu">
+          <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
+          <ul class="categories">
+
+            <li class="active">
+              <div class="inicio"> <a href="#" class="inicioTab">
+                <span class="block m-t-xs" > <a href="index.html">INICIO</a>
+
+                </span>
+              </a></div>
+            </li><br>
+            <li>   <div class="explore"> <a href="explorar_genero.html" class="exploretab">EXPLORAR</a></li><br>
+            <li>
+              <div class="cartelera">
+                <a href="#">
+                  <button class="nav-label" onclick="dropupCartelera()">MI CARTELERA</button>
+                     <i class="material-icons">arrow_drop_down</i>
+                </a>
+                <span class="playlists">
+                  <ul id="cartelera-list" class="nav nav-second-level collapse in">
+                    <li><a href="#">Para ver con Ella</a></li>
+                  </ul>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="grupos">
+                <a href="#">
+          <span  class="nav-label">MIS GRUPOS</span>
+          <i class="material-icons">arrow_drop_down</i> </a>
+                <div class="listaGrupos">
+                  <ul>
+                    <a href="#">Familia</a>
+                    <a href="#">La banda</a>
+                  </ul>
+                </div>
+                </span>
+
+            </li><br>
+            <li> <a href="#">CONFITERÍA</a></li>
+            </li>
+            </div>
+          </ul>
+      </nav>
+
+        <div id="explorar" class="home" style="background:#fff;">
+            <div  class="container-fluid">
+                <div class="navExplorar">
+                    <nav>
+                        <ul>
+                            <li><a href="#">GÉNERO</a></li>
+                            <li><a href="#">ESTADO DE ÁNIMO</a></li>
+                            <li><a href="#">A LA CARTE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="listaGenero">
+                    <div class="row">
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/western.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Western</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/ficcion.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Ficción</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/crimen.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Crimen</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/cienciaFiccion.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Ciencia Ficción</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/drama.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Drama</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/suspenso.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Suspenso</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/terror.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Terror</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/musicales.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Musicales</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/bollywood.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Bollywood</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/accion.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Acción</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/aventura.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Aventura</h2>
+                        </div>
+                        <div class="col">
+                            <div class="img"><a href="#"><img src="resources/generos/animada.jpg" alt=""></a></div>
+                            <div class="opacity"></div>
+                            <h2>Animada</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+          var navbar = document.getElementById("globalnavbar");
+          var sticky = navbar.offsetTop;
+
+          function scrolling() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+              document.getElementById('explorar').style.marginTop = '65px';
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+
+
+          function openSlideMenu() {
+
+            $('a').on('click', function() {
+              $('a').removeClass('opened');
+              $(this).addClass('opened');
+            });
+            document.getElementById('side-menu').style.width = '13%';
+            if (  document.getElementById('side-menu').getElementsByClassName('opened')) {
+              document.getElementById('explorar').style.marginLeft = '13%';
+              document.getElementById('explorar').style.width = '86%';
+            }
+          else{}
+          }
+
+          function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('explorar').style.marginLeft = '0';
+            if (document.getElementById('activitySideBar').width=='13%') {
+              document.getElementById('explorar').style.width = '73%';
+            } else {      document.getElementById('explorar').style.width = '100%';
+      }
+
+          }
+
+              function closeSlideAct() {
+                document.getElementById('activitySideBar').style.width = '4%';
+                document.getElementById('activitySideBar').style.marginLeft = '10%';
+                document.getElementById('explorar').style.marginRight = '10%';
+                if (document.getElementById('activitySideBar').width=='13%') {
+                  document.getElementById('explorar').style.width = '73%';
+                } else {      document.getElementById('explorar').style.width = '90%';
+          }
+
+              }
+          function dropupCartelera() {
+            document.getElementById('cartelera-list').style.height = '0';
+            document.getElementById('cartelera-list').style.opacity = '0';
+          }
+
+
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+                integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+                integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+                crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -246,7 +246,7 @@ input[type=text]:focus {
   left: 86%;
 
   border-width: medium;
-  background-color: #13080c;
+  background-color: #121212;
   overflow-x: hidden;
   padding-top:25px;
   transition: 0.5s;
@@ -289,7 +289,7 @@ input[type=text]:focus {
   z-index: 5;
   top: 0;
   left: 0;
-  background-color: #13080c;
+  background-color: #121212;
   overflow-x: hidden;
   padding-top: 25px;
   transition: 0.5s;
