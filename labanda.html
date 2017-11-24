@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filmmate</title>
+  <link rel="stylesheet" href="css/css_index.css">
+  <link rel="stylesheet" href="css/css_index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<header>
+  <nav id="globalnavbar" class="globalnavbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M2,5 25,5" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2,12 25,12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M2,19 25,19" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </span>
+
+    <a href="#" class="logo"><img src="resources/FilmmateLogo.png" class="w3-image" alt=""  height="100%"></a>
+    <a href=""> <i class="material-icons">search</i>  </a>
+
+    <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes..">
+    </input>
+
+    <div class="secondaryNav">
+      <ul id="user-info" class="userInfo">
+        <li><button <i class="material-icons">notifications</i> </button></li>
+      </ul>
+
+      <ul class="avatar">
+        <li><img src="resources/inicio/av2.png" class="avatar" alt=""></li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+<body onscroll="scrolling()">
+  <nav class="side-navmenu">
+    <div id="side-menu" class="side-navmenu">
+      <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
+      <ul class="categories">
+
+        <li class="active">
+          <div class="inicio"> <a href="index.html" class="inicioTab">
+            <span class="block m-t-xs" >
+              INICIO
+            </span>
+          </a></div>
+        </li><br>
+        <li> <a href="explorar_genero.html">EXPLORAR</a></li><br>
+        <li>
+          <div class="cartelera">
+            <a href="#">
+              <button class="nav-label" onclick="dropupCartelera()">MI CARTELERA</button>
+                 <i class="material-icons">arrow_drop_down</i>
+            </a>
+            <span class="playlists">
+              <ul id="cartelera-list" class="nav nav-second-level collapse in">
+                <li><a href="#">Para ver con Ella</a></li>
+              </ul>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="grupos">
+            <a href="#">
+      <span  class="nav-label">MIS GRUPOS</span>
+      <i class="material-icons">arrow_drop_down</i> </a>
+            <div class="listaGrupos">
+              <ul>
+                <a href="#">Familia</a>
+                <a href="#">La banda</a>
+              </ul>
+            </div>
+            </span>
+
+        </li><br>
+        <li> <a href="#">CONFITERÍA</a></li>
+        </li>
+        </div>
+      </ul>
+  </nav>
+
+  <div id="Homecontent" class="home">
+    <div class="container-fluid">
+    <div class="titulogrupo">
+      <h1 class="banda">LA BANDA</h1>
+    </div>
+    <div id="movieplan" class="movieplan" >
+      <img src="resources/labanda/padding.png" alt="" class="w3-image" style="width:100%; height:auto;">
+    </div>
+
+    <div class="more_movies">
+
+      <h3>NUESTROS PLANES</h3>
+      <div class="movies_more">
+        <ul>
+          <li>
+            <div class="more_m unoImg"><img src="resources/pelis/deadpool2.jpg" alt="" style="width:100%;height:auto">
+              <div class="overlay"><a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/pacificrim.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="more_movies">
+      <h3>PORQUE TE GUSTA RAMEN</h3>
+      <div class="movies_more">
+        <ul>
+          <li>
+            <div class="food"><img src="resources/food/ramennn.png" alt="" width="100%"></div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/turtle.jpg" alt="" width="100%">
+              <div class="overlay">
+                <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/punch.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/naruto.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/bg6.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="more_movies">
+      <h3>PORQUE TE GUSTA RAMEN</h3>
+      <div class="movies_more">
+        <ul>
+          <li>
+            <div class="food"><img src="resources/food/ramennn.png" alt="" width="100%"></div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/ramyun_15.jpg" alt="" width="100%">
+              <div class="overlay">
+                <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/punch.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/naruto.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/bg6.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="more_movies">
+
+      <h3>BASADO EN TU PLAYLIST HITS 2018</h3>
+      <div class="movies_more">
+        <ul>
+          <li>
+            <div class="more_m unoImg"><img src="resources/pelis/deadpool2.jpg" alt="" style="width:100%;height:auto">
+              <div class="overlay"><a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/pacificrim.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/spider.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/beauty.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="more_m"><img src="resources/pelis/killbill.jpg" alt="" width="100%">
+              <div class="overlay"> <a href="#" class="play"><i class="material-icons md-100">play_circle_outline</i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logoschild">
+        <div class="logos">
+          <div class="log"><img src="./resources/tw.png" alt=""></div>
+          <div class="log"><img src="./resources/fb.png" alt=""></div>
+        </div>
+      </div>
+      <p>2017 Filmmate</p>
+    </div>
+  </div>
+
+  <div id="activitySideBar" class="activitySideBar">
+    <nav>
+      <div>
+        <a href="#" class="btn-closemenu" onclick="closeSlideAct()"> <i class="material-icons">keyboard_arrow_right</i> ocultar panel</a> <br> <br>
+        <ul class="categories">
+          <li class="active">
+            <div class="inicio"> <a href="#" class="inicioTab">
+              <span class="block m-t-xs" >
+                MIS PLANES
+              </span>
+            </a></div>
+          </li><br>
+          <li class="active">
+            <div class="inicio"> <a href="#" class="inicioTab">
+              <span class="block m-t-xs" >
+                ACTIVIDAD
+              </span>
+            </a></div>
+          </li><br>
+
+        </ul>
+    </nav>
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    var navbar = document.getElementById("globalnavbar");
+    var sticky = navbar.offsetTop;
+
+    function scrolling() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        document.getElementById('lastMovie').style.marginTop = '65px';
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+
+    function openSlideMenu() {
+
+      $('a').on('click', function() {
+        $('a').removeClass('opened');
+        $(this).addClass('opened');
+      });
+      document.getElementById('side-menu').style.width = '13%';
+      if (document.getElementById('side-menu').getElementsByClassName('opened')) {
+        document.getElementById('Homecontent').style.marginLeft = '13%';
+        document.getElementById('Homecontent').style.width = '86%';
+      } else {}
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('Homecontent').style.marginLeft = '0';
+      if (document.getElementById('activitySideBar').width == '13%') {
+        document.getElementById('Homecontent').style.width = '73%';
+      } else {
+        document.getElementById('Homecontent').style.width = '100%';
+      }
+
+    }
+
+    function closeSlideAct() {
+      document.getElementById('activitySideBar').style.width = '4%';
+      document.getElementById('activitySideBar').style.marginLeft = '10%';
+      document.getElementById('Homecontent').style.marginRight = '10%';
+      if (document.getElementById('activitySideBar').width == '13%') {
+        document.getElementById('Homecontent').style.width = '73%';
+      } else {
+        document.getElementById('Homecontent').style.width = '90%';
+      }
+
+    }
+
+    function dropupCartelera() {
+      document.getElementById('cartelera-list').style.height = '0';
+      document.getElementById('cartelera-list').style.opacity = '0';
+    }
+
+    function genresBtn() {
+      $('button').on('click', function() {
+        $('button').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    }
+  </script>
+
+</body>
+
+</html>
