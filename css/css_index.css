@@ -110,9 +110,11 @@ body {
   margin: 0;
   background-color: #181818;
   overflow-x: hidden;
+  display: block;
 }
 
 .home {
+
   padding: 0 -15px 0 -15px;
   margin: 0 -15px 0 -15px;
   background-color: #181818;
@@ -235,28 +237,59 @@ input[type=text]:focus {
 }
 
 .activitySideBar {
+  width: 14%;
   height: 100%;
-  width: 0;
   margin-top: 60px;
   position: fixed;
-  z-index: 0;
+  z-index: 5;
   top: 0;
-  left: 0;
-  background-color: #121212;
+  left: 86%;
+
+  border-width: medium;
+  background-color: #13080c;
   overflow-x: hidden;
-  padding-top: 0px;
+  padding-top:25px;
   transition: 0.5s;
+}
+
+
+.activitySideBar .btn-closemenu a {
+  top: 0;
+  right: 22px;
+  font-family: 'proxima_nova_altlight' font-weight:lighter;
+  font-size: 10px;
+  margin-left: 0;
+  margin-bottom: 60px;
+}
+
+.activitySideBar a {
+  padding: 10px 5px 5px 20px;
+  text-decoration: none;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 16px;
+  color: #a0a0a0;
+  transition: 0.3s;
+}
+
+.activitySideBar .btn-closemenu {
+  font-family: 'proxima_nova_altlight';
+  margin-left: -10px;
+  font-size: 16px;
+}
+
+.activitySideBar a:hover {
+  color: #f32655;
+  text-decoration: none;
 }
 
 .side-navmenu {
   height: 100%;
-
   margin-top: 60px;
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
-  background-color: #121212;
+  background-color: #13080c;
   overflow-x: hidden;
   padding-top: 25px;
   transition: 0.5s;
@@ -360,7 +393,7 @@ input[type=text]:focus {
 }
 
 .genres {
-  margin-top: -670px;
+  margin-top: -470px;
   z-index: 100;
   display: flex;
   flex-direction: row;
@@ -386,7 +419,7 @@ input[type=text]:focus {
 
 .lastMovie{
 width: 100%;
-height: 600px;
+height: 500px;
 display: flex;}
 .genres button:hover {
   background: -webkit-linear-gradient(90deg, #ee0979, #fc5c12);
@@ -419,7 +452,7 @@ display: flex;}
 
 .lastMovieContent {
   margin: 10%;
-  margin-top: 10%;
+  margin-top: 80px;
   margin-left: 150px;
   display: flex;
   flex-direction: row;
@@ -507,6 +540,9 @@ h1, p, h2 {
   color: #fff;
 }
 
+.grupos {
+  margin-top: 15px;
+}
 h3 {
   font-family: 'proxima_nova_rgbold';
   color: #a0a0a0;
@@ -538,7 +574,7 @@ p {
   flex-direction: column;
   width: 100%;
   padding: 20px;
-  margin-top: 200px;
+  margin-top: -50px;
   margin-left: 15px;
 
 }
@@ -580,6 +616,12 @@ margin-top: 15px;
   list-style: none;
   align-content: space-between;
   align-items: center;1
+}
+
+.food{
+  width: 210px;
+  height: auto;
+  margin-right: 15px;
 }
 
 .more_m {
@@ -658,7 +700,7 @@ margin-top: -20px;
   margin-left: 13%;
   transition: margin-left 0.5s;
   overflow: hidden;
-  width: 100%;
+  width: 73%;
 }
 
 .more_m:hover {

@@ -42,7 +42,7 @@
 </header>
 
 <body onscroll="scrolling()">
-  <nav>
+  <nav class="side-navmenu">
     <div id="side-menu" class="side-navmenu">
       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
       <ul class="categories">
@@ -58,7 +58,7 @@
         <li>
           <div class="cartelera">
             <a href="#" >
-              <button class="nav-label" onclick="dropup()">MI CARTELERA</button>
+              <button class="nav-label" onclick="dropupCartelera()">MI CARTELERA</button>
                  <i class="material-icons">arrow_drop_down</i>
             </a>
             <span class="playlists">
@@ -186,6 +186,31 @@
 
     </div>
   </div>
+
+  <div id="activitySideBar" class="activitySideBar">
+    <nav >
+      <div >
+        <a href="#" class="btn-closemenu" onclick="closeSlideAct()"> <i class="material-icons">keyboard_arrow_right</i> ocultar panel</a> <br> <br>
+        <ul class="categories">
+          <li class="active">
+            <div class="inicio"> <a href="#" class="inicioTab">
+              <span class="block m-t-xs" >
+                MIS PLANES
+              </span>
+            </a></div>
+          </li><br>
+          <li class="active">
+            <div class="inicio"> <a href="#" class="inicioTab">
+              <span class="block m-t-xs" >
+                ACTIVIDAD
+              </span>
+            </a></div>
+          </li><br>
+
+        </ul>
+    </nav>
+
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     var navbar = document.getElementById("globalnavbar");
@@ -200,18 +225,44 @@
       }
     }
 
+
     function openSlideMenu() {
+
+      $('a').on('click', function() {
+        $('a').removeClass('opened');
+        $(this).addClass('opened');
+      });
       document.getElementById('side-menu').style.width = '13%';
-      document.getElementById('Homecontent').style.marginLeft = '13%';
+      if (  document.getElementById('side-menu').getElementsByClassName('opened')) {
+        document.getElementById('Homecontent').style.marginLeft = '13%';
+        document.getElementById('Homecontent').style.width = '86%';
+      }
+    else{}
     }
 
     function closeSlideMenu() {
       document.getElementById('side-menu').style.width = '0';
       document.getElementById('Homecontent').style.marginLeft = '0';
+      if (document.getElementById('activitySideBar').width=='13%') {
+        document.getElementById('Homecontent').style.width = '73%';
+      } else {      document.getElementById('Homecontent').style.width = '100%';
+}
+
     }
 
+        function closeSlideAct() {
+          document.getElementById('activitySideBar').style.width = '4%';
+          document.getElementById('activitySideBar').style.marginLeft = '10%';
+          document.getElementById('Homecontent').style.marginRight = '10%';
+          if (document.getElementById('activitySideBar').width=='13%') {
+            document.getElementById('Homecontent').style.width = '73%';
+          } else {      document.getElementById('Homecontent').style.width = '90%';
+    }
+
+        }
     function dropupCartelera() {
       document.getElementById('cartelera-list').style.height = '0';
+      document.getElementById('cartelera-list').style.opacity = '0';
     }
 
     function genresBtn() {
