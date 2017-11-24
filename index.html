@@ -22,8 +22,8 @@
       </a>
     </span>
 
-    <a href="#">Logo</a>
-
+    <a href="#" class="logo"><img src="resources/FilmmateLogo.png" class="w3-image" alt=""  height="100%"></a>
+  <a href=""> <i class="material-icons">search</i>  </a>
 
     <input type="text" name="search" placeholder=" Buscar por películas, géneros, directores, restaurantes..">
     </input>
@@ -38,8 +38,6 @@
 </header>
 
 <body onscroll="scrolling()">
-
-
   <nav>
     <div id="side-menu" class="side-navmenu">
       <a href="#" class="btn-closemenu" onclick="closeSlideMenu()"> <i class="material-icons">keyboard_arrow_left</i> ocultar panel</a> <br>
@@ -55,8 +53,8 @@
         <li> <a href="#">EXPLORAR</a></li><br>
         <li>
           <div class="cartelera">
-            <a href="#" onclick="dropupCartelera()">
-              <span class="nav-label">MI CARTELERA</span>
+            <a href="#" >
+              <button class="nav-label" onclick="dropup()">MI CARTELERA</button>
                  <i class="material-icons">arrow_drop_down</i>
             </a>
             <span class="playlists">
@@ -89,83 +87,94 @@
   <div id="Homecontent" class="home">
     <div class="container-fluid">
       <div id="lastMovie" class="lastMovie">
-        <img src="resources/inicio/prinMovie.png" alt="" width="100%">
+        <img src="resources/inicio/prinMovie.png" alt="" class="w3-image"  width="100%">
       </div>
       <div id="genres" class="genres" onclick="genresBtn()">
-        <button class="selected">General</button>
-        <button>Drama</button>
-        <button>Ciencia Ficción</button>
-        <button>Comedia</button>
-        <button>Comedia Romántica</button>
-        <button>Acción</button>
-        <button>Documentales</button>
-        <button>Animación</button>
+          <button class="selected">General</button>
+          <button>Drama</button>
+          <button>Ciencia Ficción</button>
+          <button>Comedia</button>
+          <button>Comedia Romántica</button>
+          <button>Acción</button>
+          <button>Documentales</button>
+          <button>Animación</button>
       </div>
       <div class="lastMovieContent">
           <a href="#"><i class="material-icons md-160">play_circle_outline</i></a>
           <div class="movieInfo">
-            <h3>CONTINUAR VIENDO</h3>
-            <h1 class="movieTitle">STRANGER THINGS: SEASON 2</h1>
-            <h2>T2: Episodio 5</h2>
+            <h3>CONTINUAR VIENDO</h3><br>
+            <h1 class="movieTitle">STRANGER THINGS: SEASON 2  <a href="#"><i class="material-icons md-30">add_circle</i></a></h1>
+            <h2>T2: Episodio 5</h2><br>
             <p>Nancy y Jonathan se acercan a un nuevo aliado que tiene su propia teoría sobre los eventos. Once indaga en su pasado, y Bob es clave en un momento crítico.</p>
             <ul class="movieBtns">
-              <li><i class="material-icons">add_circle</i></li>
-              <li><button class="selected">¡Crear plan!</button></li>
+              <li><button>¡Crear plan!</button></li>
             </ul>
           </div>
       </div>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
-      <h5>aaaaaaaaaaaaaaaaaaaaaaaaaaleda</h5>
+      <div class="recentMovies">
+        <h3>VISTO RECIENTEMENTE</h3>
+        <div class="rm_movies">
+          <ul>
+            <li><div class="tercer">
+              <div class="m m3 _1"><img src="resources/pelis/got.jpg" alt="" width="100%"></div>
+              <div class="m m3 _2"></div>
+            </div></li>
+            <li><div class="dos">
+              <div class="m m2 _1"></div>
+              <div class="m m2 _2"></div>
+            </div></li>
+            <li><div class="m uno"></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="more_movies">
+        <h3>PORQUE TE GUSTA RAMEN</h3>
+        <div class="movies_more">
+          <ul>
+            <li><div class="food"><img src="resources/food/ramennn.png" alt="" width="100%"></div></li>
+            <li><div class="more_m"><img src="resources/pelis/ramyun_15.jpg" alt="" width="100%">
+              <div class="overlay">
+    </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/punch.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/naruto.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/bg6.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="more_movies">
+
+        <h3>BASADO EN TU PLAYLIST HITS 2018</h3>
+        <div class="movies_more">
+          <ul>
+            <li><div class="more_m"><img src="resources/pelis/deadpool2.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/pacificrim.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/spider.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+            <li><div class="more_m"><img src="resources/pelis/beauty.jpg" alt="" width="100%">      <div class="overlay">
+        </div></div></li>
+<li><div class="more_m"><img src="resources/pelis/killbill.jpg" alt="" width="100%">      <div class="overlay">
+</div></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="more_movies">
+        <h3>DIRECTORES QUE PODRÍAN GUSTARTE</h3>
+        <div class="movies_more">
+          <ul>
+            <li><div class="more_m dir"><img src="resources/pelis/got.jpg" alt="" width="100%"></div></li>
+            <li><div class="more_m dir"><img src="resources/pelis/animacion.png" alt="" width="100%"></div></li>
+            <li><div class="more_m dir"><img src="resources/pelis/cloud.jpg" alt="" width="100%"></div></li>
+            <li><div class="more_m dir"><img src="resources/pelis/her.jpg" alt="" width="100%"></div></li>
+          </ul>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -184,8 +193,8 @@
     }
 
     function openSlideMenu() {
-      document.getElementById('side-menu').style.width = '210px';
-      document.getElementById('Homecontent').style.marginLeft = '210px';
+      document.getElementById('side-menu').style.width = '13%';
+      document.getElementById('Homecontent').style.marginLeft = '13%';
     }
 
     function closeSlideMenu() {
